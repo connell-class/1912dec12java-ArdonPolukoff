@@ -590,7 +590,7 @@ public class EvaluationService {
 				primeCount++;
 			}
 		}
-		System.out.println(number);
+		return number;
 	}
 
 	/**
