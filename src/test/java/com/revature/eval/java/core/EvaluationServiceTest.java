@@ -238,6 +238,8 @@ public class EvaluationServiceTest {
 		assertEquals(expectedWordCount, actualWordCount);
 	}
 
+	
+	// need to solve this one
 	@Test
 	public void handlesExpandedLists() {
 		Map<String, Integer> expectedWordCount = new HashMap<>();
@@ -550,12 +552,12 @@ public class EvaluationServiceTest {
 	 * Question 16
 	 ******************************************************************/
 	@Test
-	public void emptySentenceIsNotPangram() {
+	public void emptyXSentenceIsNotPangram() {
 		assertFalse(evaluationService.isPangram(""));
 	}
 
 	@Test
-	public void recognizesPerfectLowerCasePangram() {
+	public void recognizesPerfectLowerCJasePangram() {
 		assertTrue(evaluationService.isPangram("abcdefghijklmnopqrstuvwxyz"));
 	}
 
